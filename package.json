@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon server"
+    "server": "nodemon server",
+    "start":"nodemon --experimental-modules --es-module-specifier-resolution=node index.js"
   },
   "keywords": [],
   "author": "",
