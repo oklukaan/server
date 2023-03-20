@@ -138,7 +138,7 @@ app.post('/', async(req,res)=>{
          fetch("http://localhost/wordpress/wp-json/wp/v2/posts", {
             method: "POST",
             headers: headers,
-            body: JSON.stringify({ title: "Hello", content: `<!-- wp:paragraph -->${content} ${myResponse.map(element=>element.replace('ız',''))}<!-- /wp:paragraph -->`, status: "draft" })
+            body: JSON.stringify({ title: "Hello from kaan", content: `<!-- wp:paragraph -->${content} ${myResponse.map(element=>element.replace('ız',''))}<!-- /wp:paragraph -->`, status: "draft" })
           });
     
     
