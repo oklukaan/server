@@ -4,7 +4,7 @@ import cors from "cors";
 import fs from 'fs';
 import fetch, { Headers } from "node-fetch"
 import { Configuration,OpenAIApi } from "openai";
-import AuthSchema from '../server/model/auth.js'
+
 
 import   database   from '../server/config/database.js'
 
