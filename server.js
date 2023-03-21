@@ -6,7 +6,7 @@ import fetch, { Headers } from "node-fetch"
 import { Configuration,OpenAIApi } from "openai";
 
 
-import  database from '../server/config/database.js'
+import  database from './config/database.js'
 
 import {router} from './routes/routes.js'
 
