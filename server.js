@@ -40,7 +40,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use(cors({
-    origin: 'https://majestic-tapioca-9dbd97.netlify.app/', // front-end uygulamanızın URL'si
+    origin: 'https://mychatclient.vercel.app/', // front-end uygulamanızın URL'si
     credentials: true,
   }));
 app.use('/',router)
