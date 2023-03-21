@@ -40,7 +40,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use(cors({
-    origin: 'http://127.0.0.1:5173', // front-end uygulamanızın URL'si
+    origin: 'https://majestic-tapioca-9dbd97.netlify.app/', // front-end uygulamanızın URL'si
     credentials: true,
   }));
 app.use('/',router)
