@@ -39,14 +39,16 @@ const app=express();
 
 app.use(express.json());
 
-app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "https://mychatclient.vercel.app");
-    next();
-});
 app.use(cors({
-    origin: 'https://mychatclient.vercel.app/', // front-end uygulamanızın URL'si
-    credentials: true,
+    origin: true,
+    credentials: true
   }));
+  
+  app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Credentials', 'true');
+    next();
+  });
+
 app.use('/',router)
 
 app.get('/',async(req,res)=>{
