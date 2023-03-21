@@ -12,13 +12,13 @@ import {router} from './routes/routes.js'
 
 database();
 
-const headers = new Headers()
- const ourPassword = "Nu2d tlxz aEXo eAEj 11Kv CVec"
- const ourUsername = "admin"
+// const headers = new Headers()
+//  const ourPassword = "Nu2d tlxz aEXo eAEj 11Kv CVec"
+//  const ourUsername = "admin"
 
 
- headers.set("Content-Type", "application/json")
- headers.set("Authorization", "Basic " + Buffer.from(`${ourUsername}:${ourPassword}`).toString("base64"))
+//  headers.set("Content-Type", "application/json")
+//  headers.set("Authorization", "Basic " + Buffer.from(`${ourUsername}:${ourPassword}`).toString("base64"))
 
 
 
@@ -137,12 +137,12 @@ app.post('/', async(req,res)=>{
             
         })
 
-         const content=response.data.choices[0].text;
-         fetch("http://localhost/wordpress/wp-json/wp/v2/posts", {
-            method: "POST",
-            headers: headers,
-            body: JSON.stringify({ title: "Hello from kaan", content: `<!-- wp:paragraph -->${content} ${myResponse.map(element=>element.replace('ız',''))}<!-- /wp:paragraph -->`, status: "draft" })
-          });
+        //  const content=response.data.choices[0].text;
+        //  fetch("http://localhost/wordpress/wp-json/wp/v2/posts", {
+        //     method: "POST",
+        //     headers: headers,
+        //     body: JSON.stringify({ title: "Hello from kaan", content: `<!-- wp:paragraph -->${content} ${myResponse.map(element=>element.replace('ız',''))}<!-- /wp:paragraph -->`, status: "draft" })
+        //   });
     
     
 
