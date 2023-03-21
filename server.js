@@ -40,7 +40,7 @@ const app=express();
 app.use(express.json());
 
 app.use(cors({
-    origin: 'https://mychatclient-ww1r-1yuf9mwuj-oklukaan.vercel.app/'
+    origin: 'https://mychatclient.vercel.app'
   }));
 
 app.use('/',router)
