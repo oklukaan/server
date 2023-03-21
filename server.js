@@ -27,7 +27,7 @@ database();
 dotenv.config();
 
 const configuration=new Configuration({
-    apiKey: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,
+    apiKey:process.env.OPENAI_API_KEY,
 }); 
 
 const openai=new OpenAIApi(configuration);
